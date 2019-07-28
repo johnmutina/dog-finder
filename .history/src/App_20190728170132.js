@@ -59,11 +59,7 @@ class App extends Component {
       let currentDog = this.props.dogs.find(
         dog => dog.name.toLowerCase() === name.toLowerCase()
       );
-      if (currentDog !== undefined) {
-        return <Dog {...props} dog={currentDog} key={currentDog.name} />;
-      } else {
-        return <Redirect to="/dogs" />;
-      }
+      return <Dog {...props} dog={currentDog} />;
     };
 
     return (
@@ -95,7 +91,18 @@ class App extends Component {
               <DogFinder dogs={this.props.dogs} {...routeProps} />
             )}
           />
-          <Route exact path="/dogs/:name" render={getDog} />
+          <Route
+            exact
+            path="/dogs/:name"
+            render={routeProps => (
+              <Dog
+                {...this.props.dogs.filter(
+                  dog => dog.name === routeProps.match.params.name
+                )[0]}
+                {...routeProps}
+              />
+            )}
+          />
           <Redirect to="/dogs" />
         </Switch>
       </div>

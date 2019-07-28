@@ -59,10 +59,8 @@ class App extends Component {
       let currentDog = this.props.dogs.find(
         dog => dog.name.toLowerCase() === name.toLowerCase()
       );
-      if (currentDog !== undefined) {
+      if (currentDog != undefined) {
         return <Dog {...props} dog={currentDog} key={currentDog.name} />;
-      } else {
-        return <Redirect to="/dogs" />;
       }
     };
 

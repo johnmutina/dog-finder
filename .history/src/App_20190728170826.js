@@ -62,7 +62,7 @@ class App extends Component {
       if (currentDog !== undefined) {
         return <Dog {...props} dog={currentDog} key={currentDog.name} />;
       } else {
-        return <Redirect to="/dogs" />;
+        <Redirect to="/dogs" />;
       }
     };
 

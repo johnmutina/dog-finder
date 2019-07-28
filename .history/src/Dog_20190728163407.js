@@ -5,11 +5,11 @@ class Dog extends Component {
   render() {
     return (
       <div className="Dog">
-        <img src={this.props.dog.src} alt={`${this.props.dog.name}`} />
-        <h1>{this.props.dog.name}</h1>
-        <h3>{this.props.dog.age} years old</h3>
+        <img src={this.props.src} alt={`${this.props.name}`} />
+        <h1>{this.props.name}</h1>
+        <h3>{this.props.age} years old</h3>
         <ul>
-          {this.props.dog.facts.map(fact => (
+          {this.props.facts.map(fact => (
             <li>{fact}</li>
           ))}
         </ul>
