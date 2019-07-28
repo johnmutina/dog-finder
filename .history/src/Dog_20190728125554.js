@@ -12,7 +12,6 @@ class Dog extends Component {
             <li>{fact}</li>
           ))}
         </ul>
-        <button onClick={this.props.history.goBack}>Go Back</button>
       </div>
     );
   }

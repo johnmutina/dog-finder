@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import Dog from "./Dog";
 
 class DogFinder extends Component {
@@ -8,12 +7,10 @@ class DogFinder extends Component {
       <div className="DogFinder">
         <h1>Pick a Dog!</h1>
         {this.props.dogs.map(dog => (
-          <Link to={`/dogs/${dog.name}`}>
-            <div className="DogFinder-container">
-              <img src={dog.src} alt={dog.name} />
-              <h1>{dog.name}</h1>
-            </div>
-          </Link>
+          <div className="DogFinder-container">
+            <img src={dog.src} alt={dog.name} />
+            <h1>{dog.name}</h1>
+          </div>
         ))}
       </div>
     );

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Switch, Route, NavLink, Redirect } from "react-router-dom";
+import { Switch, Route, NavLink } from "react-router-dom";
 import DogFinder from "./DogFinder";
 import Dog from "./Dog";
 import "./App.css";
@@ -94,7 +94,7 @@ class App extends Component {
               />
             )}
           />
-          <Route render={() => <Redirect to="/dogs" />} />
+          <Route component={DogFinder} />
         </Switch>
       </div>
     );

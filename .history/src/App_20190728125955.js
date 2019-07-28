@@ -94,7 +94,7 @@ class App extends Component {
               />
             )}
           />
-          <Route render={() => <Redirect to="/dogs" />} />
+          <Route component={DogFinder} />
         </Switch>
       </div>
     );
