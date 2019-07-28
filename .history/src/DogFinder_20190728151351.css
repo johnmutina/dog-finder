@@ -1,0 +1,17 @@
+.DogFinder {
+  border: 2px solid red;
+}
+
+.DogFinder-box {
+  display: flex;
+  flex-flow: row wrap;
+  border: 2px solid green;
+}
+
+.DogFinder-dog-container {
+  width: 20%;
+}
+
+.DogFinder-dog-container img {
+  width: 290px;
+}

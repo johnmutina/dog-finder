@@ -1,0 +1,7 @@
+.App {
+  text-align: center;
+}
+.App-navbar {
+  display: flex;
+  background-color: red;
+}

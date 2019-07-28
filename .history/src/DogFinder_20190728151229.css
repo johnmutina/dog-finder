@@ -1,0 +1,8 @@
+.DogFinder {
+  border: 2px solid red;
+}
+
+.DogFinder-container {
+  display: flex;
+  border: 2px solid green;
+}

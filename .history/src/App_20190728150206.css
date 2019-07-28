@@ -1,0 +1,9 @@
+.App {
+  text-align: center;
+}
+.App-navbar {
+  display: flex;
+  justify-content: space-around;
+  padding: 5% 10%;
+  background-color: red;
+}

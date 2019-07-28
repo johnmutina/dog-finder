@@ -1,0 +1,11 @@
+.Dog {
+  border: 2px solid red;
+  width: 40%;
+  max-width: 30%;
+  margin: 50px 30% 0 30%;
+  background: white;
+}
+
+.Dog img {
+  width: 100%;
+}

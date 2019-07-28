@@ -1,0 +1,26 @@
+.DogFinder {
+  margin-top: 10px;
+  border: 2px solid red;
+}
+
+.DogFinder-box {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-end;
+  border: 2px solid green;
+}
+
+.DogFinder-dog-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-items: center;
+  align-items: center;
+}
+
+.DogFinder-dog-container img {
+  padding: 20px;
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+}

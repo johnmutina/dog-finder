@@ -1,0 +1,15 @@
+.Dog {
+  width: 60%;
+  max-width: 500px;
+  margin: 50px auto 0 auto;
+  background: white;
+}
+
+.Dog img {
+  width: 100%;
+}
+
+.Dog ul {
+  list-style: none;
+  width: 100%;
+}

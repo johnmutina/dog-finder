@@ -1,0 +1,35 @@
+.DogFinder {
+  margin-top: 50px;
+}
+
+.DogFinder-title {
+  color: white;
+  margin-bottom: 50px;
+}
+
+.DogFinder-box {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.DogFinder-dog-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-items: center;
+  align-items: center;
+  font-size: 13px;
+  color: white;
+}
+
+.DogFinder-dog-container:hover {
+  background-color: #2e80b6;
+}
+
+.DogFinder-dog-container img {
+  padding: 20px;
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+}
